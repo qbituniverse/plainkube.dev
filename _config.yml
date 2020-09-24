@@ -1,2 +1,4 @@
 theme: jekyll-theme-architect
 google_analytics: UA-178961335-1
+plugins:
+  - jekyll-sitemap
