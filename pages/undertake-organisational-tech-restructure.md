@@ -1,27 +1,13 @@
 ---
-title: XI. Undertake organisational "Tech" restructure
-description: Undertake organisational "Tech" restructure
+title: XI. Undertake organisational Tech restructure
+description: Change is necessary, promote knowledge share, upskill people and hire new talent
 permalink: /undertake-organisational-tech-restructure/
 ---
 
-# XI. Undertake organisational "Tech" restructure
+# XI. Undertake organisational Tech restructure
 
-## TBC
+## Change is necessary, promote knowledge share, upskill people and hire new talent
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec dui euismod, pharetra nibh id, sagittis odio. Ut sed efficitur dolor. Sed commodo purus eu odio feugiat tincidunt. Vivamus in pulvinar enim. Cras bibendum, nibh tincidunt facilisis mollis, lacus eros pulvinar odio, eget semper ante ex sodales orci.
-
-In semper nulla suscipit volutpat tincidunt. Quisque ac justo id ex ultrices vulputate quis quis neque. Sed porta orci semper dolor egestas, tristique rutrum odio posuere.
-
-## TBC
-
-TLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec dui euismod, pharetra nibh id, sagittis odio. Ut sed efficitur dolor. Sed commodo purus eu odio feugiat tincidunt. Vivamus in pulvinar enim. Cras bibendum, nibh tincidunt facilisis mollis, lacus eros pulvinar odio, eget semper ante ex sodales orci.
-
-In semper nulla suscipit volutpat tincidunt. Quisque ac justo id ex ultrices vulputate quis quis neque. Sed porta orci semper dolor egestas, tristique rutrum odio posuere.
-
-## TBC
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec dui euismod, pharetra nibh id, sagittis odio. Ut sed efficitur dolor. Sed commodo purus eu odio feugiat tincidunt. Vivamus in pulvinar enim. Cras bibendum, nibh tincidunt facilisis mollis, lacus eros pulvinar odio, eget semper ante ex sodales orci.
-
-In semper nulla suscipit volutpat tincidunt. Quisque ac justo id ex ultrices vulputate quis quis neque. Sed porta orci semper dolor egestas, tristique rutrum odio posuere.
+Content coming soon...
 
 ### [<< Previous](/consider-platformops-for-delivering-software) | [Next >>](/the-journey-to-kubernetes-in-production)
