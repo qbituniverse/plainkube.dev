@@ -30,7 +30,7 @@ Software solutions are rarely as simple as single container deployments. Often y
 
 > Kubernetes is an open-source system that's been [developed and used at Google](https://queue.acm.org/detail.cfm?id=2898444).
 
-[Kubernetes objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/) describe your containerised application's `desired state`, such as number of instances, resource allocations and networking. These are defined in [YAML Ain't Markup Language (YAML)](https://yaml.org/) and are source controlled. This allows you to maintain the desired state of your application stack at all times and delegate to Kubernetes to ensure the actual state of your application meets the desired state as defined in YAML.
+[Kubernetes objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/) describe your containerised application's `desired state`, such as number of instances, resource allocations and networking. These are defined in [YAML Ain't Markup Language (YAML)](https://yaml.org/) and are source controlled. This allows you to always maintain the desired state of your application stack and delegate to Kubernetes to ensure the actual state of your application meets the desired state as defined in YAML.
 
 Finally, any changes to your application are then made to these YAML declarations and pushed automatically to your Kubernetes host via [CICD pipelines](/start-early-with-cicd-and-automation).
 
