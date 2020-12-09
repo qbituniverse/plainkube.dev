@@ -16,7 +16,7 @@ Software doesn't mean `Desktop` exclusively anymore - these times are long gone.
 
 > MASA stipulates that modern applications, `Mesh Applications`, are built from small distinctive `Apps` which run on top of `Services` ([APIs](https://en.wikipedia.org/wiki/API)) which are in turn orchestrated at an `API Mediation Layer`.
 
-OK, so that sounds like quite a lot is going on there, so let's unwrap MASA a little now...
+OK, so that sounds like quite a lot is going on there, so let's unwrap MASA a little...
 
 ## MASA demystified
 
@@ -24,7 +24,7 @@ OK, so that sounds like quite a lot is going on there, so let's unwrap MASA a li
 
 Let's start with the lowest layer in our MASA architecture and we’ll call it `Inner APIs`. At that level you might have a number distinct APIs running on your infrastructure. And that could be internal on-premises IIS hosted APIs or more modern cloud hosted PaaS Apps, Functions or best of all Containerised Workloads on Kubernetes. It doesn’t matter how a particular piece of API is hosted, what is important is that:
 
-> The Inner APIs are only accessible on your internal `networking infrastructure` and you have proper `Authentication` and `Authorisation` mechanisms in place to guard access to these APIs.
+> The Inner APIs are only accessible on your `internal` networking infrastructure and you have proper `Authentication` and `Authorisation` mechanisms in place to guard access to these APIs.
 
 A single Inner API in your estate could be responsible for making payments, another for submitting orders and so on... From software development point of view this approach is also called [Microservice](https://en.wikipedia.org/wiki/Microservices) or [Loose coupled](https://en.wikipedia.org/wiki/Loose_coupling) service. It makes [development and testing](/design-container-ready-development) of such components easy and it also allows to fully automate software [buildis and releases](/start-early-with-cicd-and-automation).
 
@@ -52,7 +52,7 @@ Therefore, you can see from the above, the App just needs to look pretty, and it
 
 Good example could be your hypothetical `Online Store Mesh Application` consisting of one App for user login, one App for products and shopping, one App for checkout process and one App for user dashboard. What’s great about this is that your user can start their shopping journey on tablet, then 2 hours later come back to your Mesh Application and finish off the purchase on Desktop PC or a smart watch. Quite neat, hey?
 
-From both development and infrastructure perspective the Apps are like Inner APIs. Apps are [developed](/design-container-ready-development) and [deployed](/start-early-with-cicd-and-automation) as a single component.
+From both development and infrastructure perspective the Apps are like the APIs. Apps are [developed](/design-container-ready-development) and [deployed](/start-early-with-cicd-and-automation) as a single component.
 
 > You need to consider `Networking, Routing and Authorisation` at this stage so that your `Apps`, and `Outer APIs` for that matter, are accessible to your users - very important for Internet and IoT facing implementations.
 

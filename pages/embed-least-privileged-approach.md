@@ -16,17 +16,17 @@ What's worst these applications often had to operate in an `elevated administrat
 
 You design your application [with containers in mind](/start-thinking-containers) by virtue of adopting Dockerfile declaration for your application. [From the previous chapter](/start-thinking-containers) we know that containerised applications build on top of `Base Images`, such as Core OS ([Windows Server Core](https://hub.docker.com/_/microsoft-windows-servercore) or [Alpine Linux](https://hub.docker.com/_/alpine)) or a Framework ([.NET Core](https://hub.docker.com/_/microsoft-dotnet-core) or [Node](https://hub.docker.com/_/node)) - which in turn are built on core OS...
 
-> The `Least Privileged` restrictions can be applied as follows: 
-> 1. Inside Dockerfile composition stage for Image builds
+The `Least Privileged` restrictions can be applied in two ways: 
+> 1. Inside Dockerfile composition stage for Image Builds
 > 2. Inside YAML Declaration for Kubernetes Deployments.
 
-Useful reference points here on [Docker Security](https://docs.docker.com/engine/security/) and [Resource Constraints](https://docs.docker.com/config/containers/resource_constraints/).
+Useful reference points on [Docker Security](https://docs.docker.com/engine/security/) and [Resource Constraints](https://docs.docker.com/config/containers/resource_constraints/).
 
 ## What are my options for the Least Privileged restrictions?
 
 #### Run Container as unprivileged user
 
-This is simply saying `don't run this workload as Administrator`. As result, whoever manages to `exec` into your workload will not be able to cause too much damage other than whatever is in the remit of the `unprivileged user`.
+This is simply saying `don't run this workload as Administrator`. As result, whoever manages to enter into your workload will not be able to cause too much damage other than whatever is in the remit of the `unprivileged user` running it.
 
 #### Prevent privilege escalation
 

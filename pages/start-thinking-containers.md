@@ -14,7 +14,7 @@ So you made your mind up, you like the benefits containers bring, such as [workl
 
 Any new piece of software should by default enter containerised format. Lift and shift of existing software that's not containerised is also possible - just keep reading...
 
-The chances are that whatever you are trying to containerise has already been containerised. Simply search the official [DockerHub](https://hub.docker.com/) for the piece of software you are after. [Docker's layered architecture](https://docs.docker.com/storage/storagedriver/#images-and-layers) allows you to build on top of other `Base Images`. In other words, extend Base Images to fit your requirement, which is also referred as [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build).
+The chances are that whatever you are trying to containerise has already been containerised. Simply search the official [DockerHub](https://hub.docker.com/) for the piece of software you are after. [Docker's layered architecture](https://docs.docker.com/storage/storagedriver/#images-and-layers) allows you to build on top of other `Base Images`. In other words, extend Base Images to fit your requirement, which is also referred to as [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build).
 
 > Using `Base Images` speeds up your development process as you don't have to `reinvent the wheel` allowing you to focus on your requirement and implementation.
 
@@ -28,7 +28,9 @@ And of course `Databases`: [Microsoft SQL Server](https://hub.docker.com/_/micro
 
 ## What if I have an unusual requirement?
 
-Then you can build on top of an existing `Base Image` and add your code or dependencies that are required for your piece of software. What's important to stress is that when I say `Think Containers` I mean:
+Then you can build on top of an existing Base Image and add your code or dependencies that are required for your piece of software.
+
+What's important to stress is that when I say `Think Containers` I mean:
 
 > Treat your software as a bundle: `OS + Dependencies + Source Code`.
 
