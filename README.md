@@ -14,13 +14,13 @@ Guidance in this document can be used to `organise your development teams` and h
 
 # Background
 
-This document has been put together as result of an exciting learning journey which started with `Docker addiction`. It then quickly evolved into a spiral of `container orchestration` episodes involving `Docker Swarm` and ultimately `Kubernetes`. Finally, `Helm Charts` came in to provide that one-click packaging and software delivery mechanism making these modern technologies combined an extremely powerful cocktail.
+This document has been put together as result of an exciting learning journey which started with `Docker` addiction. It then quickly evolved into a spiral of container orchestration episodes involving Docker Swarm and ultimately `Kubernetes`. Finally, `Helm` Charts came in to provide that one-click packaging and software delivery mechanism making these modern technologies combined an extremely powerful cocktail.
 
 Why `plainkube.dev`? Reason is that along this discovery and learning journey I came across several architectural paradigms, methodologies, models, approaches and themes. There isn't a prescribed way of delivering software end-to-end that one could simply follow - like an instruction manual.
 
 Hence, I argued earlier that tech these days is a bit of an art. What this document is aiming to deliver is a `plain overview` of an end-to-end `Container & Kubernetes` powered solution that worked out very well in several software product implementations.
 
-In fact, the following 12 chapters on `plainkube.dev` are, hopefully, easy to digest instructions to inspire you to make your `Journey to Production with Kubernetes` a success.
+The following 12 chapters are easy to digest instructions to inspire you to start your `Journey to Production with Kubernetes`.
 
 # Who should read this document?
 
