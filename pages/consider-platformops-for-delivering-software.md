@@ -10,4 +10,4 @@ permalink: /consider-platformops-for-delivering-software/
 
 Content coming soon...
 
-### [<< Previous](/embrace-product-oriented-delivery-model) | [Next >>](/undertake-organisational-tech-restructure)
+### [<< Previous](/api-lifecycle-management-is-the-future) | [Next >>](/embrace-product-oriented-delivery-model)
