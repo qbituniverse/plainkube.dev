@@ -10,4 +10,4 @@ permalink: /the-journey-to-kubernetes-in-production/
 
 Content coming soon...
 
-### [<< Previous](/undertake-organisational-tech-restructure)
+### [<< Previous](/embrace-product-oriented-delivery-model)

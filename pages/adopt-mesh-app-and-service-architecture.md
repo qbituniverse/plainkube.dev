@@ -14,7 +14,7 @@ Software doesn't mean `Desktop` exclusively anymore - these times are long gone.
 
 `Mesh App and Service Architecture (MASA)` - it's a term coined by [Gartner](https://www.gartner.com/en) and you can read more about it in this particular research paper: [MASA: How to Create an Agile Application Architecture With Apps, APIs and Services](https://www.gartner.com/en/documents/3980382).
 
-> MASA stipulates that modern applications, `Mesh Applications`, are built from small distinctive `Apps` which run on top of `Services` ([APIs](https://en.wikipedia.org/wiki/API)) which are in turn orchestrated at an `API Mediation Layer`.
+> MASA stipulates that modern applications, `Mesh Applications`, are built from small distinctive `Apps` ([Software](https://en.wikipedia.org/wiki/Application_software)) which run on top of `Services` ([APIs](https://en.wikipedia.org/wiki/API)) which are in turn orchestrated at an `API Mediation Layer` ([API Management](https://en.wikipedia.org/wiki/API_management)).
 
 OK, so that sounds like quite a lot is going on there, so let's unwrap MASA a little...
 
@@ -26,7 +26,7 @@ Let's start with the lowest layer in our MASA architecture and we’ll call it `
 
 > The Inner APIs are only accessible on your `internal` networking infrastructure and you have proper `Authentication` and `Authorisation` mechanisms in place to guard access to these APIs.
 
-A single Inner API in your estate could be responsible for making payments, another for submitting orders and so on... From software development point of view this approach is also called [Microservice](https://en.wikipedia.org/wiki/Microservices) or [Loose coupled](https://en.wikipedia.org/wiki/Loose_coupling) service. It makes [development and testing](/design-container-ready-development) of such components easy and it also allows to fully automate software [buildis and releases](/start-early-with-cicd-and-automation).
+A single Inner API in your estate could be responsible for making payments, another for submitting orders and so on... From software development point of view this approach is also called [Microservice](https://en.wikipedia.org/wiki/Microservices) or [Loose coupled](https://en.wikipedia.org/wiki/Loose_coupling) service. It makes [development and testing](/design-container-ready-development) of such components easy and it also allows to fully automate software [builds and releases](/start-early-with-cicd-and-automation).
 
 However, on their own, these APIs are not very useful other than `doing one thing very well`... these APIs now need orchestration and we'll be looking into that next.
 
@@ -36,11 +36,15 @@ Enter the world of API orchestration which we'll call `Outer APIs` in our MASA a
 
 > The Outer APIs are `the window` for your Inner APIs and allow you to compose or orchestrate a chain of Inner API calls. The `Authentication` and `Authorisation` mechanism at this level will depend on you `App` architecture and your identity solution.
 
-An Outer API could be performing product sorting feature or submitting payments on your `App`. Whatever the requirement is, Outer APIs will implement it in the `API Mediation Layer` - this is also sometimes known as [API Management](https://en.wikipedia.org/wiki/API_management).
+An Outer API could be performing product sorting feature or submitting payments on your `App`. Whatever the requirement is, Outer APIs will implement it in the `API Mediation Layer`.
+
+> This also brings another concept for your consideration - [API Lifecycle Management](/api-lifecycle-management-is-the-future).
 
 From software development perspective things get little more complicated as you'll now deal with potentially multiple Inner APIs required to be accessible to develop a single Outer API feature. Again, [thinking containers](/start-thinking-containers) and [container development](/design-container-ready-development) helps a lot here.
 
-From the [CICD perspective](/start-early-with-cicd-and-automation) situation is also similar to Inner APIs, however, you might want to start thinking [PlatformOps](/consider-platformops-for-delivering-software) when it comes to running and supporting `API Management and Gateways` solutions.
+From the [CICD perspective](/start-early-with-cicd-and-automation) situation is also similar to Inner APIs, however...
+
+> You might want to start thinking [PlatformOps](/consider-platformops-for-delivering-software) when it comes to running and supporting `Mesh Apps` hosted on `Kubernetes` as these solutions will `depend heavily` on [API Lifecycle Management and API Gateways](/api-lifecycle-management-is-the-future) components.
 
 #### Mesh Applications
 

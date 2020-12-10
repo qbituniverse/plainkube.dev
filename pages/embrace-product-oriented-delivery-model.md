@@ -1,13 +1,13 @@
 ---
-title: IX. Embrace Product-Oriented Delivery model
+title: XI. Embrace Product-Oriented Delivery model
 description: Create cross-functional teams to allow Business and IT work together
 permalink: /embrace-product-oriented-delivery-model/
 ---
 
-# IX. Embrace Product-Oriented Delivery model
+# XI. Embrace Product-Oriented Delivery model
 
 ## Create cross-functional teams to allow Business and IT work together
 
 Content coming soon...
 
-### [<< Previous](/design-container-ready-development) | [Next >>](/consider-platformops-for-delivering-software)
+### [<< Previous](/consider-platformops-for-delivering-software) | [Next >>](/the-journey-to-kubernetes-in-production)

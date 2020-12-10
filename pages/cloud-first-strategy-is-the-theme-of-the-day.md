@@ -44,6 +44,6 @@ If cloud adoption is to be driven from technology side, then probably best way i
 
 ## Final thoughts as either way you do this it'll be a game changer...
 
-> In either approach to `cloud adoption`, [organisational tech restructure](/undertake-organisational-tech-restructure) is probably unavoidable. Make sure you upskill or re-deploy people to do jobs that are relevant in the new ways of delivering technology to the business. The shift towards [virtualisation and containers](/docker-kubernetes-and-helm) will also create brand new avenues for `tech savvy individuals` in the space of platform management - also known as [PlatformOps](/consider-platformops-for-delivering-software).
+> In either approach to `cloud adoption`, an organisational tech restructure is probably unavoidable. Make sure you upskill or re-deploy people to do jobs that are relevant in the new ways of delivering technology to the business. The shift towards [virtualisation and containers](/docker-kubernetes-and-helm) will also create brand new avenues for `tech savvy individuals` in the space of platform management - also known as [PlatformOps](/consider-platformops-for-delivering-software).
 
 ### [<< Previous](/invest-efforts-into-logging-and-monitoring) | [Next >>](/design-container-ready-development)
