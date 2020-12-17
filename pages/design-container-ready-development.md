@@ -16,11 +16,11 @@ Depending on your [Solution stack](https://en.wikipedia.org/wiki/Solution_stack)
 
 This is very common, and once in a while such setup causes what we normally define a [Dependency hell](https://en.wikipedia.org/wiki/Dependency_hell) - where your code just stops working because of framework version conflicts.
 
-There's also much, much more serious problem with such setup, and that is the following.
+There's also much, much more serious problem with such setup, and that is the following situation.
 
-> `But it works on my machine` situation. 
+> `But it works on my machine`... 
 
-Sounds familiar? We've all seen it, you deploy software to a host and - bang - it doesn't work!
+Sounds familiar? We've all seen it; you deploy software to a host and - bang - it doesn't work!
 
 ## The Container environment
 
@@ -34,7 +34,9 @@ And do you know what's best in all this?
 
 > You can now build software on Mac targeting Windows host or work on Windows machine writing software for Linux
 
-With the setup above your software will now make use of `Dockerfile and Docker Images` bringing the benefits of [OS, dependencies and code encapsulation](/start-thinking-containers). You will realise stability all across your `environment releases` with [fully automated CICD pipelines](/start-early-with-cicd-and-automation). And, finally you will embed `container native security` into your workloads with adoption of the [least privileged](/embed-least-privileged-approach) concept.
+With the setup above your software will now make use of `Dockerfile and Docker Images` bringing the benefits of [OS, dependencies and code encapsulation](/start-thinking-containers).
+
+You will realise stability all across your `environment releases` with [fully automated CICD pipelines](/start-early-with-cicd-and-automation). And, finally you will embed `container native security` into your workloads with adoption of the [least privileged](/embed-least-privileged-approach) concept.
 
 ## The Container way of working
 

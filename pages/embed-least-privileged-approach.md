@@ -17,8 +17,8 @@ What's worst these applications often had to operate in an `elevated administrat
 You design your application [with containers in mind](/start-thinking-containers) by virtue of adopting Dockerfile declaration for your application. [From the previous chapter](/start-thinking-containers) we know that containerised applications build on top of `Base Images`, such as Core OS ([Windows Server Core](https://hub.docker.com/_/microsoft-windows-servercore) or [Alpine Linux](https://hub.docker.com/_/alpine)) or a Framework ([.NET Core](https://hub.docker.com/_/microsoft-dotnet-core) or [Node](https://hub.docker.com/_/node)) - which in turn are built on core OS...
 
 The `Least Privileged` restrictions can be applied in two ways: 
-> 1. Inside Dockerfile composition stage for Image Builds
-> 2. Inside YAML Declaration for Kubernetes Deployments.
+> 1. Inside `Dockerfile` composition stage for Image Builds
+> 2. Inside `YAML Declaration` for Kubernetes Deployments.
 
 Useful reference points on [Docker Security](https://docs.docker.com/engine/security/) and [Resource Constraints](https://docs.docker.com/config/containers/resource_constraints/).
 
@@ -26,7 +26,7 @@ Useful reference points on [Docker Security](https://docs.docker.com/engine/secu
 
 #### Run Container as unprivileged user
 
-This is simply saying `don't run this workload as Administrator`. As result, whoever manages to enter into your workload will not be able to cause too much damage other than whatever is in the remit of the `unprivileged user` running it.
+This is simply saying `don't run this workload as Administrator`. As result, whoever manages to enter your workload will not be able to cause too much damage other than whatever is in the remit of the `unprivileged user` running it.
 
 #### Prevent privilege escalation
 
@@ -34,7 +34,7 @@ In addition to the above, you can also explicitly state that `privilege escalati
 
 #### Add or remove Container capabilities
 
-As with any OS, Docker Container is no exception - it has several processes running inside. These are defined as `capabilities` and range from opening ports, firewalls, file system commands or networking. If your container workload doesn't need any of these OS capabilities, you should simply disable them before these get exploited.
+As with any OS, Docker Container is no exception - it has several processes running inside. These are defined as `capabilities` and range from opening ports, firewalls, file system commands or networking. If your container workload doesn't need any of these OS capabilities, you should simply `disable` them before these get exploited.
 
 #### Limit computer resources available to Container
 
