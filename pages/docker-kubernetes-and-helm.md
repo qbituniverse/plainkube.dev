@@ -12,7 +12,7 @@ permalink: /docker-kubernetes-and-helm/
 
 ## What is Docker?
 
-Docker has taken both software and infrastructure virtualisation to the next level where the concepts of [Virtual Machines](https://en.wikipedia.org/wiki/Virtual_machine) and [Software Runtime](https://en.wikipedia.org/wiki/Runtime_system) got merged into a single [Dockerfile](https://docs.docker.com/engine/reference/builder/) declaration. The `Dockerfile` acts as documentation for your software. It is source-controlled which in essence prevents configuration drift. Finally, it allows you to treat your software as a `self-contained`, single deployable package.
+Docker has taken both software and infrastructure virtualisation to the next level where the concepts of [Virtual Machines](https://en.wikipedia.org/wiki/Virtual_machine) and [Software Runtime](https://en.wikipedia.org/wiki/Runtime_system) got merged into a single [Dockerfile](https://docs.docker.com/engine/reference/builder/) declaration. The `Dockerfile` acts as documentation for your software. It is a source-controlled file, which in essence prevents configuration drift. Finally, it allows you to treat your software as a single, deployable, `self-contained` package.
 
 > The container format standard is now governed by the [Open Container Initiative (OCI)](https://opencontainers.org/).
 
@@ -24,7 +24,7 @@ Finally, you can store your Images in `Container Registries`, such as [Azure ACR
 
 ## What is Kubernetes?
 
-Software solutions are rarely as simple as single container deployments. Often you will architect your solutions from multiple smaller components, referred as [Microservices](https://en.wikipedia.org/wiki/Microservices) or [APIs](https://en.wikipedia.org/wiki/API). Concepts such as [Mesh App and Service Architecture (MASA)](/adopt-mesh-app-and-service-architecture) are often considered in such scenarios. Therefore, to pull these multi-app, multi-service deployments off you need something more than just Docker, you need `container orchestrator`, and luckily there's one called Kubernetes [k8s]...
+Software solutions are rarely as simple as single container deployments. Often you will architect your solutions from multiple smaller components, referred as [Microservices](https://en.wikipedia.org/wiki/Microservices) or [APIs](https://en.wikipedia.org/wiki/API). Concepts such as [Mesh App and Service Architecture (MASA)](/adopt-mesh-app-and-service-architecture) are often considered in such scenarios. Therefore, to pull these multi-app, multi-service deployments off you need something more than just Docker, you need `container orchestrator`, and luckily there's one called Kubernetes (k8s)...
 
 `Kubernetes` allows you to automate, scale and manage your containerised applications. It's a `production grade` system which you can run [in development](/design-container-ready-development), on-premises or in the cloud with [Azure AKS](https://azure.microsoft.com/en-gb/services/kubernetes-service), [Google GKE](https://cloud.google.com/kubernetes-engine), [AWS EKS](https://aws.amazon.com/eks) or [IBM Managed Kubernetes Service](https://www.ibm.com/uk-en/cloud/container-service).
 

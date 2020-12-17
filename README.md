@@ -10,7 +10,7 @@ Writing and delivering software is a bit of an art. There are numerous programmi
 
 This document looks at the operational aspect of writing software. But what does it mean? Well, in other words, I won't be telling you `how to write clean software` here. In fact, I cover that in my other document [dirtydozen.dev](https://dirtydozen.dev) where I expose 12 most common code mistakes which programmes tend to make.
 
-Guidance in this document can be used to `organise your development teams` and help deliver your projects, or products, faster. You will learn how to provision, manage, and run modern infrastructure and discover architectural patterns aimed at helping you `deliver software fast and at scale`. And what technology is better suited to deliver that other than [Kubernetes](https://kubernetes.io/) - plus a sprinkle of [Docker](https://www.docker.com/) with a hint of [Helm](https://helm.sh/) added for a good measure. Tasty!
+Guidance in this document can be used to `organise your development teams` and help deliver your software faster. You will learn how to provision, manage, and run modern infrastructure and discover architectural patterns aimed at helping you deliver software `fast and at scale`. And what technology is better suited to deliver that other than [Kubernetes](https://kubernetes.io/) - plus a sprinkle of [Docker](https://www.docker.com/) with a hint of [Helm](https://helm.sh/) added for a good measure. Tasty!
 
 # Background
 

@@ -8,7 +8,9 @@ permalink: /adopt-mesh-app-and-service-architecture/
 
 ## Mobile, Web, IoT, Desktop built from independent apps and services
 
-Software doesn't mean `Desktop` exclusively anymore - these times are long gone. With an advent of mobile devices swiftly followed by [Internet of Things (IoT)](https://en.wikipedia.org/wiki/Internet_of_things) software development had to extend its reach to cover all these new `runtime` devices. And do you know what the best bit in all this is? The expectation that your solution is built form a single source code and then simply `rolled out` onto all these different devices - all at once that is...
+Software doesn't mean `Desktop` exclusively anymore - these times are long gone. With an advent of mobile devices, swiftly followed by [Internet of Things (IoT)](https://en.wikipedia.org/wiki/Internet_of_things), software development had to extend its reach to cover all these new `runtime` devices.
+
+Nowadays, the expectation that your solution is built form a single source code and then simply `rolled out` onto all these different devices - `all at once` that is...
 
 ## What is Mesh App and Service Architecture?
 
@@ -16,7 +18,7 @@ Software doesn't mean `Desktop` exclusively anymore - these times are long gone.
 
 > MASA stipulates that modern applications, `Mesh Applications`, are built from small distinctive `Apps` ([Software](https://en.wikipedia.org/wiki/Application_software)) which run on top of `Services` ([APIs](https://en.wikipedia.org/wiki/API)) which are in turn orchestrated at an `API Mediation Layer` ([API Management](https://en.wikipedia.org/wiki/API_management)).
 
-OK, so that sounds like quite a lot is going on there, so let's unwrap MASA a little...
+OK, so that sounds like quite a lot is going on there, so let's unwrap `MASA` a little...
 
 ## MASA demystified
 
@@ -24,23 +26,23 @@ OK, so that sounds like quite a lot is going on there, so let's unwrap MASA a li
 
 Let's start with the lowest layer in our MASA architecture and we’ll call it `Inner APIs`. At that level you might have a number distinct APIs running on your infrastructure. And that could be internal on-premises IIS hosted APIs or more modern cloud hosted PaaS Apps, Functions or best of all Containerised Workloads on Kubernetes. It doesn’t matter how a particular piece of API is hosted, what is important is that:
 
-> The Inner APIs are only accessible on your `internal` networking infrastructure and you have proper `Authentication` and `Authorisation` mechanisms in place to guard access to these APIs.
+> The Inner APIs are only accessible on your `internal` networking infrastructure and you have proper `authentication` and `authorisation` mechanisms in place to guard access to these APIs.
 
 A single Inner API in your estate could be responsible for making payments, another for submitting orders and so on... From software development point of view this approach is also called [Microservice](https://en.wikipedia.org/wiki/Microservices) or [Loose coupled](https://en.wikipedia.org/wiki/Loose_coupling) service. It makes [development and testing](/design-container-ready-development) of such components easy and it also allows to fully automate software [builds and releases](/start-early-with-cicd-and-automation).
 
-However, on their own, these APIs are not very useful other than `doing one thing very well`... these APIs now need orchestration and we'll be looking into that next.
+However, on their own, these APIs are not very useful other than `doing one thing very well`... these APIs need orchestration and we'll be looking into that next.
 
 #### Outer APIs
 
-Enter the world of API orchestration which we'll call `Outer APIs` in our MASA architecture. The purpose for Outer APIs is to chain together one or many Inner API calls to achieve an action or a execute process. Outer APIs are also hosted on your infrastructure, in fact, the same hosting and access principle apply as per Inner APIs. Only difference is `their function`:
+Enter the world of API orchestration which we'll call `Outer APIs` in our MASA architecture. The purpose for Outer APIs is to chain together one or many Inner API calls to achieve an action or execute a process. Outer APIs are also hosted on your infrastructure, in fact, the same hosting and access principles apply as per Inner APIs. Only difference is `their function`:
 
-> The Outer APIs are `the window` for your Inner APIs and allow you to compose or orchestrate a chain of Inner API calls. The `Authentication` and `Authorisation` mechanism at this level will depend on you `App` architecture and your identity solution.
+> The Outer APIs are `the window` for your Inner APIs and allow you to compose or orchestrate a chain of Inner API calls. The `authentication` and `authorisation` mechanism at this level will depend on you `App` architecture and your identity solution.
 
 An Outer API could be performing product sorting feature or submitting payments on your `App`. Whatever the requirement is, Outer APIs will implement it in the `API Mediation Layer`.
 
 > This also brings another concept for your consideration - [API Lifecycle Management](/api-lifecycle-management-is-the-future).
 
-From software development perspective things get little more complicated as you'll now deal with potentially multiple Inner APIs required to be accessible to develop a single Outer API feature. Again, [thinking containers](/start-thinking-containers) and [container development](/design-container-ready-development) helps a lot here.
+From software development perspective things get little more complicated as you'll now deal with potentially multiple Inner APIs required to be accessible for development of a single Outer API feature. Again, [thinking containers](/start-thinking-containers) and [container development](/design-container-ready-development) helps a lot here.
 
 From the [CICD perspective](/start-early-with-cicd-and-automation) situation is also similar to Inner APIs, however...
 
@@ -48,7 +50,7 @@ From the [CICD perspective](/start-early-with-cicd-and-automation) situation is 
 
 #### Mesh Applications
 
-Finally, we got to the top of our MASA architecture which we'll just call `Mesh Applications` or `Apps` for short. The applications are your products, either internal (Intranet) or external (Internet) facing. Often the Apps will be in the form of [Responsive website](https://en.wikipedia.org/wiki/Responsive_web_design) capable of running on many screen sizes and devices. You might also have Apps written for [IoT](https://en.wikipedia.org/wiki/Internet_of_things) devices such as [wearable technology](https://en.wikipedia.org/wiki/Wearable_technology).
+Finally, we got to the top of our MASA architecture which we'll just call `Mesh Applications` or `Apps` for short. The applications are [your products](/embrace-product-oriented-delivery-model), either internal (Intranet) or external (Internet) facing. Often the Apps will be in the form of [Responsive websites](https://en.wikipedia.org/wiki/Responsive_web_design) capable of running on many screen sizes and devices. You might also have Apps written for [IoT](https://en.wikipedia.org/wiki/Internet_of_things) devices such as [wearable technology](https://en.wikipedia.org/wiki/Wearable_technology).
 
 > The Apps are in effect `dumb frontends` which need to be able to `execute calls over HTTP protocol` to consume Outer APIs. Outer APIs in effect provide the Apps with all the logic required for them to function. Or to put it in other words, Outer APIs are the `heart of your product`.
 
