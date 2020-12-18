@@ -6,7 +6,7 @@ permalink: /
 
 # Introduction
 
-Writing and delivering software is a bit of an art. There are numerous programming languages out there to choose from. Some of which determine the `hosting platform` you must use to run the complied code on. Moreover, there are programming patterns, styles, Do's and Don't Do's that every programmer has at their disposal. All these patterns and best practices are optional of course. However, what matters at the end of the day is `compiled, bundled, packaged, and running software`.
+Writing and delivering software is a bit of an art. There are numerous programming languages out there to choose from. Some of which determine the `hosting platform` you must use to run the complied code on. Moreover, there are programming patterns, styles, Do's and Don't Do's, which every programmer has at their disposal. All these patterns and best practices are optional of course. However, what matters at the end of the day is `compiled, bundled, packaged, and running software`.
 
 This document looks at the operational aspect of writing software. But what does it mean? Well, in other words, I won't be telling you `how to write clean software` here. In fact, I cover that in my other document [dirtydozen.dev](https://dirtydozen.dev) where I expose 12 most common code mistakes which programmes tend to make.
 
@@ -18,7 +18,7 @@ This document has been put together as result of an exciting learning journey wh
 
 Why `plainkube.dev`? Reason is that along this discovery and learning journey I came across several architectural paradigms, methodologies, models, approaches and themes. There isn't a prescribed way of delivering software end-to-end that one could simply follow - like an instruction manual.
 
-Hence, I argued earlier that tech these days is a bit of an art. What this document is aiming to deliver is a `plain overview` of an end-to-end `Container & Kubernetes` powered solution that worked out very well in several software product implementations.
+Hence, I argued earlier that tech these days is a bit of an art. What this document is aiming to deliver is a `plain overview` of an end-to-end `Container & Kubernetes` powered solution which worked out very well in several software product implementations.
 
 The following 12 chapters are easy to digest instructions to inspire you to start your `Journey to Production with Kubernetes`.
 
