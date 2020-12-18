@@ -12,7 +12,7 @@ permalink: /docker-kubernetes-and-helm/
 
 ## What is Docker?
 
-Docker has taken both software and infrastructure virtualisation to the next level where the concepts of [Virtual Machines](https://en.wikipedia.org/wiki/Virtual_machine) and [Software Runtime](https://en.wikipedia.org/wiki/Runtime_system) got merged into a single [Dockerfile](https://docs.docker.com/engine/reference/builder/) declaration. The `Dockerfile` acts as documentation for your software. It is a source-controlled file, which in essence prevents configuration drift. Finally, it allows you to treat your software as a single, deployable, `self-contained` package.
+Docker has taken both software and infrastructure virtualisation to the next level where the concepts of [Virtual Machines](https://en.wikipedia.org/wiki/Virtual_machine) and [Software Runtime](https://en.wikipedia.org/wiki/Runtime_system) got merged into a single [Dockerfile](https://docs.docker.com/engine/reference/builder/) declaration. The `Dockerfile` acts as documentation for your software. It is a source-controlled file, which in essence prevents configuration drift, and it allows you to treat your software as a single, deployable, `self-contained` package.
 
 > The container format standard is now governed by the [Open Container Initiative (OCI)](https://opencontainers.org/).
 

@@ -20,7 +20,7 @@ The `Least Privileged` restrictions can be applied in two ways:
 > 1. Inside `Dockerfile` composition stage for Image Builds
 > 2. Inside `YAML Declaration` for Kubernetes Deployments.
 
-Useful reference points on [Docker Security](https://docs.docker.com/engine/security/) and [Resource Constraints](https://docs.docker.com/config/containers/resource_constraints/).
+> Note: useful reference points on [Docker Security](https://docs.docker.com/engine/security/) and [Resource Constraints](https://docs.docker.com/config/containers/resource_constraints/).
 
 ## What are my options for the Least Privileged restrictions?
 
