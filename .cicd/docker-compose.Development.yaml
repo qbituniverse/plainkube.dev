@@ -8,8 +8,8 @@ services:
       - ../:/usr/src/app
     tty: true
     networks:
-      - frontend
+      - plainkube.dev
 
 networks:
-  frontend:
+  plainkube.dev:
     driver: bridge
