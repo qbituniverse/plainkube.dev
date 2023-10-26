@@ -50,7 +50,7 @@ How about `developing and testing` container native solutions that are made up o
 
 [Docker Compose](https://docs.docker.com/compose/) allows you to define and run multi-container applications. All you need to do with Docker Compose is to create a [YAML Compose File](https://docs.docker.com/compose/compose-file/) declaration for your application stack.
 
-You could then either `build and run` local containers or reference images from your `Container Registry`, which normally would be your Development versions. Execute `docker-compose up` and the infrastructure will be `up and running locally` for you to develop against.
+You could then either `build and run` local containers or reference images from your `Container Registry`, which normally would be your Development versions. Execute `docker compose up` and the infrastructure will be `up and running locally` for you to develop against.
 
 #### Kubernetes
 
